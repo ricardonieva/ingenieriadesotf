@@ -12,6 +12,13 @@ public class Agencia {
   private ArrayList<Paquete> paquetes = new ArrayList();
 
     public Agencia() {
+    cargarCiudades();
+    
+    
+    }
+    
+    public void cargarCiudades(){
+    
         try {
             String codigo = "2b2fcf56-9e76-4537-b624-e5146db5da20";
             ArrayOfCiudadSvc listaciudades = obtenerCiudades(codigo);
@@ -27,8 +34,16 @@ public class Agencia {
             }
         } catch (IBusServiceObtenerCiudadesBusServiceFaultFaultFaultMessage ex) {
             ex.printStackTrace();
-        }
-           
+        }          
+        
+    }
+    
+    public void cargarPaquetes(){
+    
+    Paquete p1 = new Paquete("Tucuman", "viaje de placer a tucuman", 3, 2, Ciudades.get(0));
+    
+        System.out.println("paquete: "+p1.mostrar);
+    
     }
     
     private static ArrayOfCiudadSvc obtenerCiudades(java.lang.String codigo) throws IBusServiceObtenerCiudadesBusServiceFaultFaultFaultMessage {
