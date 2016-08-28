@@ -5,7 +5,7 @@ import Modelo.*;
 import java.util.ArrayList;
 import org.datacontract.schemas._2004._07.sge_service_contracts.ArrayOfCiudadSvc;
 import org.tempuri.IBusServiceObtenerCiudadesBusServiceFaultFaultFaultMessage;
-
+// este paquete no me aparece
 public class Agencia {
 
   private ArrayList<Ciudad> Ciudades = new ArrayList();
