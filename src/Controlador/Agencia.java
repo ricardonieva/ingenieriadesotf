@@ -13,6 +13,7 @@ public class Agencia {
 
     public Agencia() {
     cargarCiudades();
+    cargarPaquetes();
     
     
     }
@@ -42,8 +43,7 @@ public class Agencia {
     
     Paquete p1 = new Paquete("Tucuman", "viaje de placer a tucuman", 3, 2, Ciudades.get(0));
     
-        System.out.println("paquete: "+p1.mostrar);
-    
+        p1.mostrarPaquete();
     }
     
     private static ArrayOfCiudadSvc obtenerCiudades(java.lang.String codigo) throws IBusServiceObtenerCiudadesBusServiceFaultFaultFaultMessage {
