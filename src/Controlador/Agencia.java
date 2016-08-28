@@ -19,8 +19,8 @@ public class Agencia {
             System.out.println("Codigo\tCiudad");
             System.out.println("======\t======");
             for(int i=0;i<listaciudades.getCiudadSvc().size();i++) {
-//                System.out.print("["+listaciudades.getCiudadSvc().get(i).getCodigo()+"]\t");
-//                System.out.println("   "+listaciudades.getCiudadSvc().get(i).getDescripcion().getValue());
+                System.out.print("["+listaciudades.getCiudadSvc().get(i).getCodigo()+"]\t");
+                System.out.println("   "+listaciudades.getCiudadSvc().get(i).getDescripcion().getValue());
 
                 Ciudad c = new Ciudad(listaciudades.getCiudadSvc().get(i).getCodigo(), listaciudades.getCiudadSvc().get(i).getDescripcion().getValue());
                 Ciudades.add(c);
